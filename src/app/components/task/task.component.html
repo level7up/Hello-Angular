@@ -1,7 +1,7 @@
 <div class="m-5 p-10 cursor-pointer bg-gray-100">
   <h3 class="flex items-center  justify-between">
     {{task.text}}
-    <fa-icon [icon]="faTimes" class="text-red-600"></fa-icon>
+    <fa-icon [icon]="faTimes" class="text-red-600" (click)="Delete(task)"></fa-icon>
   </h3>
   <p>{{task.day}}</p>
 </div>
